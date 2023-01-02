@@ -1,0 +1,6 @@
+ctrl FAFieldCtrl {
+	group "FA framework";
+	>ParentCtrl;
+	
+	Text   SetId ;
+};

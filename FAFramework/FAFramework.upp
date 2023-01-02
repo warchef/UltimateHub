@@ -1,0 +1,26 @@
+description "FAFramework\377";
+
+uses
+	CtrlLib,
+	GridCtrl,
+	DropGrid,
+	Report,
+	RichEdit,
+	Sql,
+	TabBar,
+	AutoScroller,
+	PostgreSQL,
+	plugin/pcre;
+
+file
+	FAFramework.h,
+	main.cpp,
+	Core.cpp,
+	Core.h,
+	Core.hpp,
+	FACtrl.lay,
+	FACtrl.usc;
+
+mainconfig
+	"" = "GUI";
+
