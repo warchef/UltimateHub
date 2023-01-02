@@ -1,4 +1,4 @@
-ctrl FAFieldCtrl {
+subctrl FAFieldCtrl {
 	group "FA framework";
 	>ParentCtrl;
 	

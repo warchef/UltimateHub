@@ -1,10 +1,8 @@
-LAYOUT(FAFieldLayout, 396, 20)
-	ITEM(Upp::Label, label, SetFont(Upp::StdFont().Bold()).LeftPosZ(0, 192).TopPosZ(0, 19))
-	ITEM(Upp::ParentCtrl, ctrl, HSizePosZ(192, 0).VSizePosZ(0, 1))
+LAYOUT(FAFieldLayout, 404, 24)
+	ITEM(Upp::Label, label, SetFont(Upp::StdFont().Bold()).LeftPosZ(4, 192).TopPosZ(4, 19))
+	ITEM(Upp::ParentCtrl, ctrl, LeftPosZ(196, 204).VSizePosZ(4, 1))
 END_LAYOUT
 
 LAYOUT(TestLayout, 396, 92)
-	ITEM(Upp::Button, dv___0, LeftPosZ(44, 104).TopPosZ(20, 19))
-	ITEM(FAFieldCtrl, dv___1, LeftPosZ(56, 64).TopPosZ(52, 24))
 END_LAYOUT
 

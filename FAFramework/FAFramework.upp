@@ -10,7 +10,8 @@ uses
 	TabBar,
 	AutoScroller,
 	PostgreSQL,
-	plugin/pcre;
+	plugin/pcre,
+	AutoScroller;
 
 file
 	FAFramework.h,
@@ -18,6 +19,8 @@ file
 	Core.cpp,
 	Core.h,
 	Core.hpp,
+	Layout.h,
+	Layout.cpp,
 	FACtrl.lay,
 	FACtrl.usc;
 

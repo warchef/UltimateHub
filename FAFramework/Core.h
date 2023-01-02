@@ -3,24 +3,18 @@
 
 namespace fa {
 
-class FAState {
-public:
-	FAState() {}
-	virtual ~FAState() {}
-};
-
 class FAComponent : public Moveable<FAComponent> {
 public:
 	FAComponent() {}
 	virtual ~FAComponent() {}
 	
-	String GetId() const { return this->id; }
+	const String GetId() const { return this->id; }
 	FAComponent& SetId(String id) { this->id = id; return *this; }
 	
-	FAComponent* GetParent() { return this->parent; }
+	const FAComponent* GetParent() const { return this->parent; }
 	FAComponent& SetParent(FAComponent* parent) { this->parent = parent; return *this; }
 	
-	Array<FAComponent*>& GetChilds() { return this->childs; }
+	virtual Array<FAComponent*>& GetChilds() { return this->childs; }
 	
 	template<class T>
 	T& CreateChildComponent() { T& child = childs.Create<T>(); child.SetParent(this); return child; }
@@ -46,15 +40,7 @@ protected:
 	COMPONENT_TYPE componentType;
 };
 
-class FAFieldCtrl : public WithFAFieldLayout<ParentCtrl>, public FAComponent {
-public:
-	FAFieldCtrl() { componentType = COMPONENT_TYPE::FIELD; }
-	virtual ~FAFieldCtrl() {}
-
-};
-
-#include "Core.hpp"
-
+#include <FAFramework/Core.hpp>
 }
 
 #endif

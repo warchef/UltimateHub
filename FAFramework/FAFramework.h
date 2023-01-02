@@ -17,5 +17,6 @@ using namespace Upp;
 #include <CtrlCore/lay.h>
 
 #include "Core.h"
+#include "Layout.h"
 
 #endif
